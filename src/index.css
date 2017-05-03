@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.Toolbar{
+  position: fixed;
+  width:100%;
+}
+
+.toolbar__search form {
+  flex: 1
+}
+
+.toolbar__search {
+  flex: 1;
+}
+
+.toolbar__search button {
+  color: white!important;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {	
+  50% { 
+    background: rgb(255,255,255);
+  } 
+}
+
+.card-list__loading {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: .25rem solid #ccc;
+    border-top-color: rgb(255,255,255);
+    animation: spin 1s infinite linear;
+}
+
+.card-list__error {
+  font-size: 20px;
+  color:red;
+}
+
+.card-list__info {
+  font-size: 28px;
+  color:#ccc;
+}
+
+.Card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.Card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

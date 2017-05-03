@@ -1,0 +1,1 @@
+export const createAction = type => (payload, error, meta) => ({ type, payload, error, meta })

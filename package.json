@@ -1,0 +1,34 @@
+{
+  "name": "react-starter",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "zhDmitry",
+    "email": "kraken@live.ru"
+  },
+  "dependencies": {
+    "axios": "*",
+    "fetch-jsonp": "*",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "3.x",
+    "rebass": "*",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "react-app-rewired": "^0.6.5",
+    "react-scripts": "0.9.5"
+  },
+  "proxy": "http://localhost:4000",
+  "homepage": "https://zhDmitry.github.io/ciklum-task",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  }
+}
